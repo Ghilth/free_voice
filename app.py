@@ -76,7 +76,7 @@ st.subheader("👋 Bienvenue, je suis Baké !")
 st.markdown("""
     Je suis là pour t'écouter, te guider, et te fournir des réponses claires à tes questions sur tes droits 
     et les options disponibles face aux violences basées sur le genre.  
-    N’hésite pas à me poser tes questions en toute sérénité. Ensemble, nous trouverons des solutions. 🤝
+    Si tu cherches des conseils, n'hésite pas à me le faire savoir. Ensemble, nous trouverons des solutions. 🤝
 """)
 
 # Entrée utilisateur
