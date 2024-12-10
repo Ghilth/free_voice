@@ -9,7 +9,7 @@ st.set_page_config(
 )
 
 # Appliquer un style personnalisé
-st.markdown("""
+st.markdown(""" 
     <style>
         body {
             background-color: #f2e8d3; /* Fond beige clair */
@@ -33,7 +33,7 @@ st.markdown("""
             background-color: #e5a960; /* Couleur plus foncée au survol */
         }
         .response-box {
-            background-color: #ffffff; /* Couleur de la bulle Baké */
+            background-color: #e5a960; /* Couleur de la bulle Baké */
             padding: 15px;
             border-radius: 10px;
             color: black;
@@ -41,12 +41,29 @@ st.markdown("""
             margin: 10px 0;
         }
         .user-box {
-            background-color: #f28d3; /* Couleur de la bulle utilisateur */
+            background-color: #fffff; /* Couleur de la bulle utilisateur */
             padding: 15px;
             border-radius: 10px;
             color: black;
             font-size: 16px;
             margin: 10px 0;
+        }
+        
+        /* Style pour le bouton "Dénoncer" en bas à droite */
+        .denoncer-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #f2c277; /* Couleur du bouton */
+            color: white;
+            padding: 15px 25px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .denoncer-button:hover {
+            background-color: #e5a960; /* Couleur au survol */
         }
     </style>
 """, unsafe_allow_html=True)
@@ -71,10 +88,8 @@ user_input = st.text_area(
 # Bouton pour envoyer la question
 if st.button("Envoyer"):
     if user_input.strip():
-        with st.spinner("Baké réfléchit à une réponse pour vous..."):
-            # Appel de la fonction `ask` pour obtenir la réponse
+        with st.spinner("Baké est en train d'écrire..."):
             response = ask(user_input)
-        # Affichage de la réponse
         st.markdown('<div class="user-box">' + user_input + '</div>', unsafe_allow_html=True)
         st.markdown('<div class="response-box">' + response + '</div>', unsafe_allow_html=True)
     else:
@@ -85,3 +100,10 @@ st.markdown("""
     ---
     🔒 **Confidentialité garantie :** Toutes vos interactions avec moi, Baké, restent strictement confidentielles.
 """)
+
+# Bouton "Dénoncer" en bas à droite
+st.markdown("""
+    <a href="https://lien_externe.com" target="_blank">
+        <button class="denoncer-button">Dénoncer</button>
+    </a>
+""", unsafe_allow_html=True)
