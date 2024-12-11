@@ -28,6 +28,7 @@ st.markdown("""
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
+            right: 10px;
         }
         .stButton button:hover {
             background-color: #e5a960; /* Couleur plus foncée au survol */
@@ -52,8 +53,8 @@ st.markdown("""
         /* Style pour le bouton "Dénoncer" en bas à droite */
         .denoncer-button {
             position: fixed ;
-            bottom: 25px;
-            right: 10px;
+            bottom: 45px;
+            right: 5%;
             background-color: #f2c277; /* Couleur du bouton */
             color: white;
             padding: 10px 25px;
