@@ -51,15 +51,17 @@ st.markdown("""
         
         /* Style pour le bouton "Dénoncer" en bas à droite */
         .denoncer-button {
-            bottom: 10px;
+            position: fixed ;
+            bottom: 25px;
             right: 10px;
             background-color: #f2c277; /* Couleur du bouton */
             color: white;
-            padding: 15px 25px;
+            padding: 10px 25px;
             font-size: 16px;
             border-radius: 10px;
             border: none;
             cursor: pointer;
+        
         }
         .denoncer-button:hover {
             background-color: #e5a960; /* Couleur au survol */
