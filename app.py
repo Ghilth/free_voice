@@ -51,9 +51,8 @@ st.markdown("""
         
         /* Style pour le bouton "Dénoncer" en bas à droite */
         .denoncer-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
+            bottom: 10px;
+            right: 10px;
             background-color: #f2c277; /* Couleur du bouton */
             color: white;
             padding: 15px 25px;
@@ -103,7 +102,7 @@ st.markdown("""
 
 # Bouton "Dénoncer" en bas à droite
 st.markdown("""
-    <a href="https://lien_externe.com" target="_blank">
+    <a href="https://voixlibre.netlify.app" target="_blank">
         <button class="denoncer-button">Dénoncer</button>
     </a>
 """, unsafe_allow_html=True)
