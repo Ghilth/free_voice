@@ -105,7 +105,7 @@ st.markdown("""
 
 # Bouton "Dénoncer" en bas à droite
 st.markdown("""
-    <a href="https://voixlibre.netlify.app" target="_blank">
+    <a href="https://voixlibre.netlify.app/denoncement" target="_blank">
         <button class="denoncer-button">Dénoncer</button>
     </a>
 """, unsafe_allow_html=True)
