@@ -54,7 +54,7 @@ st.markdown("""
         .denoncer-button {
             position: fixed ;
             bottom: 45px;
-            right: 40%;
+            right: 10%;
             background-color: #f2c277; /* Couleur du bouton */
             color: white;
             padding: 10px 25px;
